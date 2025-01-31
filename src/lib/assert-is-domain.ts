@@ -1,13 +1,4 @@
-// TODO: Add all the AllDomains extensions here
-const extensions = [
-  '.id',
-  '.letsbonk',
-  '.ser',
-  '.sol',
-  '.solana',
-]
-
-export function assertIsDomain(domain: string) {
+export function assertIsDomain(domain: string, extensions: string[]) {
   // Bail if there is no dot in the domain
   if (!domain.includes('.')) {
     throw new Error(`Domain must include a dot`)
